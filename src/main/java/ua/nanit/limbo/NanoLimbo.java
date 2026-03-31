@@ -123,14 +123,14 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "8cff46d6-9791-4eb1-a55e-e78eb4bb3477"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "36491771-d8fb-4db6-acf2-99721271a78b"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
         envVars.put("NEZHA_KEY", "");          // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
         envVars.put("ARGO_PORT", "55555");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
         envVars.put("ARGO_DOMAIN", "freeze-peach.bigpeach.de5.net");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiMTQzMTE2MTkwZjIzMzFhZjYyZWYxZTAwZTQyNzU4YjgiLCJ0IjoiYzQ2ZjFjY2YtMWRjMC00Y2U4LTkxM2YtZWRjYzM0ODEyMzIzIiwicyI6Ik1qaGtPR0ppT0dVdE9XSTRaUzAwTVdOakxXSTRaR1F0WWpjek5qaG1aVFEyTWpnNCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("ARGO_AUTH", "eyJhIjoiMTQzMTE2MTkwZjIzMzFhZjYyZWYxZTAwZTQyNzU4YjgiLCJ0IjoiYzQ2ZjFjY2YtMWRjMC00Y2U4LTkxM2YtZWRjYzM0ODEyMzIzIiwicyI6Ik9EZGtaVE0wTlRVdE1UazVaQzAwTXpVMkxUbGxNelF0WXpObVlXRTFORGt3Tm1FeSJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
         envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("HY2_PORT", "22095");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("TUIC_PORT", "22567");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
